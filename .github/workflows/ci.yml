@@ -6,7 +6,7 @@ jobs:
     name: cargo test
     strategy:
       matrix:
-        version: [ubuntu-latest, ubuntu-22.04, ubuntu-20.04]
+        version: [ubuntu-latest, ubuntu-22.04, ubuntu-20.04, gha-runner-x64, gha-runner-arm64, macos-latest]
     runs-on: ${{ matrix.version }}
     steps:
       - uses: actions/checkout@v3
